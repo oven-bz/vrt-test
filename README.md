@@ -22,13 +22,21 @@ After trying both approaches, we found that the second approach is better than t
 
 To use the VRT Test answer detection tool, follow these steps:
 
-1. Clone the repository:
+1. Download Llama from the following link: https://ollama.com/download
+
+2. After downloading and setup Llama, let pull the Llama Vision 3.2 model:
+
+```shell
+ollama pull llama3.2-vision
+```
+
+3. Clone the repository:
 
 ```shell
 git clone https://github.com/oven-bz/vrt-test.git
 ```
 
-2. Install the required packages:
+4. Install the required packages:
 
 ```shell
 python -m venv venv
@@ -36,9 +44,9 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-3. Provide the VRT Test image in the `images` directory.
+5. Provide the VRT Test image in the `images` directory.
 
-4. Run the tool:
+6. Run the tool:
 
 ```shell
 python main.py
